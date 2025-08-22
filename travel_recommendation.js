@@ -35,6 +35,11 @@ function searchDestination() {
     results = travelData.beaches || [];
   } else if (query.includes("temple")) {
     results = travelData.temples || [];
+  } else if (query.includes("country" || "countries")) {
+    // Return all countries (all their cities)
+    travelData.countries.forEach((country) => {
+      results.push(...country.cities);
+    });
   } else {
     // Match countries/cities
     travelData.countries.forEach((country) => {
