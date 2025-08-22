@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - TravelBloom</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="contact-page">
+      <!-- Navbar -->
+      <div class="navbar">
+        <nav>
+          <div class="logo">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/69/69906.png"
+              height="30px"
+              alt="logo"
+            />
+            <span>Let's Go! Travel</span>
+          </div>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html" class="active">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Contact Section -->
+      <section class="hero contact">
+        <!-- Left side content -->
+        <div class="contact-info">
+          <h1>CONTACT US</h1>
+          <p>Get in touch</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

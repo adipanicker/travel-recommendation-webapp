@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" lang="en" />
+    <link rel="stylesheet" href="./travel_recommendation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Travel Recommendation Web</title>
+  </head>
+  <body>
+    <div>
+      <div class="navbar">
+        <nav>
+          <!-- logo + name -->
+          <div class="logo">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/69/69906.png"
+              height="30px"
+              alt="logo"
+            />
+            <span>Let's Go! Travel</span>
+          </div>
+
+          <!-- LINKS -->
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./contactUs.html">Contact Us</a></li>
+          </ul>
+
+          <!-- Search Bar -->
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchDestination"
+              placeholder="Enter a destination or keyword"
+            />
+            <button id="SearchBtn">Search</button>
+            <button id="ClearBtn">Clear</button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- HERO Text -->
+        <div class="hero-content">
+          <h1 id="hero-text">
+            <span>EXPLORE</span><br /><span>DREAM</span><br /><span
+              >DESTINATION</span
+            ><br />
+          </h1>
+          <p>
+            It encourages exploration of unfamiliar territories, embracing
+            diverse cultures and landscapes, while pursuing the desired
+            destination that captivates the heart and ignites a sense of wonder.
+          </p>
+          <button class="bookBtn">BOOK NOW</button>
+        </div>
+      </section>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>
