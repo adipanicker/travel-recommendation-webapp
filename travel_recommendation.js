@@ -65,10 +65,31 @@ function clearSearch() {
   document.getElementById("searchResult").innerHTML = "";
 }
 
+function submitContact() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  if (name && email && message) {
+    alert("Thanks for contacting. You response is appreciated.");
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+  } else {
+    alert("Please fill all fields correctly.");
+  }
+}
+
 // Event listener for Clear button
 document.getElementById("clearBtn").addEventListener("click", clearSearch);
-
 // Add click listener
 document
   .getElementById("searchBtn")
   .addEventListener("click", searchDestination);
+
+document
+  .querySelector(".contact-form form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // prevent refresh
+    submitContact();
+  });
